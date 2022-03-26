@@ -12,6 +12,10 @@ h1{
     font-size: 3.5rem;
     font-weight: 900;
 }
+/* ==========Navigation========= */
+.navbar-brand{
+    margin-right: 0;
+}
 /* ======= BUTTONS ========== */
 .hstrrbtn{
     background: linear-gradient(to right, rgb(236, 200, 81) 20%, rgb(214, 67, 27) 71%, rgb(212, 34, 10) 71%);
@@ -135,7 +139,7 @@ footer{
 /* ======Media Queries====== */
 @media(max-width:600px){
     main{
-        padding: 0 1em;
+        padding: 0 1.5em;
     }
     footer{
         flex-direction: column;
