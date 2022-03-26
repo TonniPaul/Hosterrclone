@@ -1,0 +1,236 @@
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    color: #535353;
+    font-size: 1.2rem;
+    background-color: #F9F4E8;
+}
+h1{
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+/* ======= BUTTONS ========== */
+.hstrrbtn{
+    background: linear-gradient(to right, rgb(236, 200, 81) 20%, rgb(214, 67, 27) 71%, rgb(212, 34, 10) 71%);
+    border-radius: 6em;
+    margin-left: 0;
+    color: #fff;
+    padding: .2em .4em;
+}
+.navi{
+    padding: 0;
+    justify-content: flex-start;
+}
+
+/* =======Article======= */
+#article{
+    display: flex;
+    padding: 7em 0;
+    flex-direction: row-reverse;
+}
+.artcont{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.check{
+    display: flex;
+}
+.check>p{
+    margin-left: .8em;
+    padding-top: .8em;
+}
+
+.artimage{
+    text-align: right;
+    position: relative;
+}
+.img-blue{
+    position: absolute;
+    top: 0em;
+    right: 4em;
+    transform: rotate(-40deg);
+    width: 60%;
+    margin: auto;
+}
+.img-pink{
+    position: absolute;
+    top: 2em;
+    right: 4em;
+    z-index: 1;
+    transform: rotate(-20deg);
+    width: 60%;
+}
+.img-purple{
+    position: absolute;
+    right: 4em;
+    z-index: 3;
+    transform: rotate(-23deg);
+    width: 60%;
+}
+.img-host{
+    position: relative;
+    right: 4em;
+    top: 1em;
+    z-index: 3;
+    width: 62%;
+    transform: rotate(5deg);
+}
+/* ======Footer====== */
+footer{
+    display: flex;
+    padding: 3em 0;
+    align-items: center;
+}
+.footimg{
+    border-radius: 100%;
+    width: 24%;
+    padding: 0;
+}
+.footlink{
+    display: flex;
+}
+.ftlink{
+    color: #535353 ;
+    text-decoration: none;
+    padding-right: 1em;
+}
+.footernote{
+    display: flex;
+    align-items: flex-end;
+    width: fit-content;
+}
+.footertext{
+    padding-left: 1em;
+    align-content: flex-end;
+}
+.footertext>h5{
+    color: #000;
+    padding-top: 0;
+}
+.footertext>p{
+    margin-bottom: 0;
+}
+/* ======Article Media Query====== */
+@media(max-width:900px){
+    #article{
+        display: flex;
+        padding: 2em 0;
+        flex-direction: row-reverse;
+    }
+    .artcont{
+        display: flex;
+        flex-direction: column;
+    }
+    .artimage{
+        text-align: right;
+        position: relative;
+        padding-bottom: 3em;
+    }
+  
+}
+
+/* ======Media Queries====== */
+@media(max-width:600px){
+    main{
+        padding: 0 1.5em;
+    }
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footernote{
+        padding-top: 3em;
+    }
+    .d-flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .inputdata{
+        width: 100%;
+        margin: 0.3em 0;
+        padding: 0.7em;
+    }
+   
+}
+
+@media(min-width:601px){
+    main{
+        padding: 2em;
+    }
+    footer{
+        justify-content: space-between;
+    }
+    .footernote{
+        align-items: flex-end;
+    }
+    .d-flex{
+        width: 70%;
+    }
+    .footernote{
+        position: relative;
+        left: 2.8em;
+        display: flex;
+        align-items: flex-end;
+        width: fit-content;
+    }
+    .footimg{
+        width: 20%;
+        padding: 0;
+    }
+}
+
+@media(min-width:900px){
+    main{
+        padding: 1em 10%;
+    }
+    .artimage{
+        left: 6em;
+    }
+    .img-blue{
+        position: absolute;
+        top: 0em;
+        right: 5em;
+        transform: rotate(-50deg);
+        width: 60%;
+        margin: auto;
+    }
+    .img-pink{
+        position: absolute;
+        top: 2em;
+        right: 5em;
+        z-index: 1;
+        transform: rotate(-20deg);
+        width: 60%;
+    }
+    .img-purple{
+        position: absolute;
+        right: 4em;
+        z-index: 3;
+        transform: rotate(-28deg);
+        width: 60%;
+    }
+    .img-host{
+        position: relative;
+        right: 4em;
+        top: 1em;
+        z-index: 3;
+        width: 62%;
+        transform: rotate(5deg);
+    }
+    .footernote{
+        position: relative;
+        left: 6em;
+        display: flex;
+        align-items: flex-end;
+        width: 350px;
+    }
+}
+@media(min-width:1500px){
+    main{
+        padding: 0 15%;
+    }
+}
