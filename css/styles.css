@@ -14,15 +14,22 @@ h1{
 }
 /* ==========Navigation========= */
 .navbar-brand{
-    margin-right: 0;
+    margin: 0;
+}
+.brandimg{
+    width: %;
+}
+button.navbar-toggler{
+    padding: o;
 }
 /* ======= BUTTONS ========== */
 .hstrrbtn{
     background: linear-gradient(to right, rgb(236, 200, 81) 20%, rgb(214, 67, 27) 71%, rgb(212, 34, 10) 71%);
     border-radius: 6em;
-    margin-left: 0;
+    margin: 0;
     color: #fff;
     padding: .2em .4em;
+    font-size: .7rem;
 }
 .navi{
     padding: 0;
@@ -161,7 +168,7 @@ footer{
    
 }
 
-@media(min-width:601px){
+@media(min-width:600px){
     main{
         padding: 2em;
     }
@@ -172,7 +179,7 @@ footer{
         align-items: flex-end;
     }
     .d-flex{
-        width: 70%;
+        width: 80%;
     }
     .footernote{
         position: relative;
@@ -231,6 +238,9 @@ footer{
         display: flex;
         align-items: flex-end;
         width: 350px;
+    }
+    .d-flex{
+        width: 100%;
     }
 }
 @media(min-width:1500px){
