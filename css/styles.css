@@ -146,7 +146,7 @@ footer{
 /* ======Media Queries====== */
 @media(max-width:600px){
     main{
-        padding: 0 1.5em;
+        padding: 0 1em;
     }
     footer{
         flex-direction: column;
